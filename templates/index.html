@@ -4,16 +4,59 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Abhinab B. Chhetri</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  <style>
+    .container{
+      display:flex;
+      gap:20px;
+      justify-content: center; /* center children horizontally */
+    }
+  </style>
 </head>
-<body>
-  <h1>Abhinab B. Chhetri</h1>
-  <img src="{{ url_for('static', filename='car.png') }}" alt="Profile Picture" class="profile-pic" />
-  <p>Welcome to my website.</p>
-
-  <div class="social-links">
+<body bgcolor="#B0C4DE">
+  <div align="center">
+    <h1>Abhinab B. Chhetri</h1>
+    <p>Welcome to my website.</p>
+    </div>
+    <hr>
+  <center>
+  <img  src="static/car.png" style="width: 50%; height: auto;" alt="Profile Picture" class="profile-pic" />
+  </center>
+  <br>
+  <hr>
+  <div class="container">
+    <div>
+    <H3>Shows I like:</H3>
+    <ol>
+      <li>Breaking Bad</li>
+      <li>House MD</li>
+      <li>Scam 1992 Harshad Mehata</li>
+      <li>Big Band Theory</li>
+    </ol>
+    </div>
+    <div>
+      <H3>Where I spend my time on YT:</H3>
+    <ol>
+      <li><a href="https://www.youtube.com/@jvscholz/videos">James Scholz</a>  [cool guy]</li>
+      <li><a href="https://www.youtube.com/@peter_draws">Peter Draws</a> [wierd guy but cool af]</li>
+      <li><a href="https://www.youtube.com/@bailey.schildbach">Bailey Schildbach</a>  [therapist]</li>
+      <li><a href="https://www.youtube.com/@bigboxSWE">bigboxSWE</a>  [cool videos on programming]</li>
+    </ol>
+    </div>
+    <div>
+      <H3>Book Recommendations !!!:</H3>
+    <ol>
+      <li>Sublle Art of Not Giving A F*ck</li>
+      <li>Thnik Straight</li>
+      <li>The Algebra of Happiness</li>
+    </ol>
+    </div>
+  </div>
+  <hr>
+  <div align="center" class="social-links">
+    <h2>Links</h2>
     <a href="https://github.com/ABHINAB-CHHETRI" target="_blank" title="GitHub">GitHub</a>
     <a href="https://linkedin.com/in/abhinab-chhetri-46b47a350" target="_blank" title="LinkedIn">LinkedIn</a>
   </div>
+  <hr>
 </body>
 </html>
